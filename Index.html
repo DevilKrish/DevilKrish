@@ -5,13 +5,15 @@
 	<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.4.9/aframe/build/aframe-ar.js"></script>
 	</head>
 	<body style="margin: 0px; overflow: hidden;">
-		<a-scene>
-			<a-cone position="0 0 0"
+		<a-scene embedded 
+			 arjs="matrixCodeType: 3x3;" 
+			 vr-mode-ui="enabled: false">
+			<a-box position="0 0 0"
 			scale="2 2 2"
 			rotation="0 0 45"
 			material="color: red;">
 			</a-cone>
-			<a-cone position="5 5 0"
+			<a-box position="3 2 0"
 			scale="2 2 2"
 			rotation="0 0 45"
 			material="color: yellow;">
